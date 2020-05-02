@@ -15,8 +15,11 @@ import {
   CreateAccountButton,
   CreateAccountButtonText
 } from './styles';
+import { useNavigation } from '@react-navigation/native';
 
 const SignIn: React.FC = () => {
+  const navigation = useNavigation();
+
   return (
     <>
       <KeyboardAvoidingView
@@ -24,33 +27,33 @@ const SignIn: React.FC = () => {
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         enabled
       >
-        
-        <ScrollView 
-        keyboardShouldPersistTaps="handled"
-        contentContainerStyle={{ flex: 1}}>
-        <Container>
-          <Image source={logoImg} />
 
-          <View>
-            <Title>Faça seu logon</Title>
-          </View>
+        <ScrollView
+          keyboardShouldPersistTaps="handled"
+          contentContainerStyle={{ flex: 1 }}>
+          <Container>
+            <Image source={logoImg} />
 
-          <Input name="email" icon="mail" placeholder="E-mail" />
-          <Input name="password" icon="lock" placeholder="Senha" />
+            <View>
+              <Title>Faça seu logon</Title>
+            </View>
 
-          <Button onPress={() => { console.log('Deu certo') }}>Entrar</Button>
+            <Input name="email" icon="mail" placeholder="E-mail" />
+            <Input name="password" icon="lock" placeholder="Senha" />
 
-          <ForgotPassword onPress={() => { }}>
-            <ForgotPasswordText>Esqueci minha senha</ForgotPasswordText>
-          </ForgotPassword>
-        </Container>
+            <Button onPress={() => { console.log('Deu certo') }}>Entrar</Button>
+
+            <ForgotPassword onPress={() => { }}>
+              <ForgotPasswordText>Esqueci minha senha</ForgotPasswordText>
+            </ForgotPassword>
+          </Container>
         </ScrollView>
-
-        <CreateAccountButton onPress={() => { }}>
-          <Icon name="log-in" size={20} color="#ff9000" />
-          <CreateAccountButtonText>Criar uma Conta</CreateAccountButtonText>
-        </CreateAccountButton>
       </KeyboardAvoidingView>
+
+      <CreateAccountButton onPress={() => { navigation.navigate('SignUp') }}>
+        <Icon name="log-in" size={20} color="#ff9000" />
+        <CreateAccountButtonText>Criar uma Conta</CreateAccountButtonText>
+      </CreateAccountButton>
     </>
   )
 };
