@@ -13,6 +13,8 @@ import Icon from 'react-native-vector-icons/Feather';
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
 
+import { useAuth } from '../../hooks/auth';
+
 import getValidationErrors from '../../utils/getValidationErros';
 
 import Input from '../../components/Input';
@@ -36,6 +38,11 @@ const SignIn: React.FC = () => {
   const passwordInputRef = useRef<TextInput>(null);
   const navigation = useNavigation();
 
+  const { signIn, user } = useAuth();
+
+  console.log(user);
+  
+
   interface SignInFormData {
     email: string;
     password: string;
@@ -55,10 +62,10 @@ const SignIn: React.FC = () => {
         // retorna todos os erros juntos
       });
 
-      // await signIn({
-      //   email: data.email,
-      //   password: data.password,
-      // });
+      await signIn({
+        email: data.email,
+        password: data.password,
+      });
 
       // history.push('/dashboard');
     } catch (err) {
