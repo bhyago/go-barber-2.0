@@ -1,16 +1,17 @@
 import 'reflect-metadata';
 
 import express, { Request, Response, NextFunction } from 'express';
+import cors from 'cors';
 import 'express-async-errors';
 
-import cors from 'cors';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import colors from 'colors/safe';
-import routes from './routes';
-import uploadConfig from './config/upload';
-import AppError from './errors/AppError';
 
-import './database';
+import uploadConfig from '@config/upload';
+import AppError from '@shared/errors/AppError';
+import routes from './routes';
+
+import '@shared/infra/typeorm';
 
 const app = express();
 
