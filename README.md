@@ -40,6 +40,10 @@ O gobarber é um aplicação de agendamentos destinada para barbearias, onde o c
 
   ## Documentações
   ### Como usar
+   Para fazer o download do projeto abra o **```terminal```** e execute o comando abaixo: 
+  ```
+  git clone https://github.com/bhyago/go-barber-2.0.git
+  ```
   - <a href="./backend/README.md">API GoBarber</a>
   - <a href="./frontend/README.md">front-end</a>
   - <a href="./appgobarber/README.md">Mobile</a>
