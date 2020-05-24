@@ -18,7 +18,7 @@
 O gobarber é um aplicação de agendamentos destinada para barbearias, onde o cliente pode marcar um serviço com um barbeiro específico e o barbeiro faz o gerenciameto de seus agendamentos. O goBarber está sendo desenvolvido com ***typeScript***, ***NodeJS***, ***React*** e ***React Native***. Com este projeto aprendi muito sobre como organizar a arquiterua utilizando os principios de **DDD (Domain Driven Design)** e **TDD(Test Driven Development)** utilizando **Jest**.
 
 ## Tecnologias
-
+ - [TypeScript](https://www.typescriptlang.org/)
  - [ Nodejs ]( https://nodejs.org/en/ )
  - [ Expressjs ]( https://expressjs.com/pt-br/ )
  - [ Jest ]( https://jestjs.io/ )
@@ -26,6 +26,7 @@ O gobarber é um aplicação de agendamentos destinada para barbearias, onde o c
  - [ PostgreSQL ]( https://www.postgresql.org/ )
  - [ MongoDB]( https://www.mongodb.com/cloud/atlas )
  - [ Redis ]( https://redis.io/ )
+ - [React](https://reactjs.org/)
 
 
  #### WEB
@@ -38,7 +39,7 @@ O gobarber é um aplicação de agendamentos destinada para barbearias, onde o c
 
   ## Documentações
   ### Como usar
-  - [API GoBarber]()
+  - <a href="./backend/README.md">API GoBarber</a>
   - [Front-End]()
   - [Mobile]()
 
