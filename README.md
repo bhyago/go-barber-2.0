@@ -8,26 +8,25 @@
 
 <p align="center">
   <a href="#sobre-o-gobarber">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#TecnologiasTecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#calendar-entrega">Interface</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#calendar-entrega">Documentações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#Tecnologias>Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Interface">Interface</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Documentaçõesa">Documentações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licença">Licença</a>
 </p>
 
 ## Sobre o Gobarber
-O gobarber é um aplicação de agendamentos destinada para barbearias, o cliente pode marcar um serviço com um barbeiro específico e o barbeiro faz o gerenciameto de seus agendamentos. O goBarber está sendo desenvolvido com ***typeScript***, ***NodeJS***, ***React*** e ***React Native***. Como este projeto aprendi muito sobre com organizar a arquiterua utilizando os principios de **DDD (Domain Driven Design)** e **TDD(Test Driven Development)** utilizando **Jest**.
+O gobarber é um aplicação de agendamentos destinada para barbearias, onde o cliente pode marcar um serviço com um barbeiro específico e o barbeiro faz o gerenciameto de seus agendamentos. O goBarber está sendo desenvolvido com ***typeScript***, ***NodeJS***, ***React*** e ***React Native***. Com este projeto aprendi muito sobre como organizar a arquiterua utilizando os principios de **DDD (Domain Driven Design)** e **TDD(Test Driven Development)** utilizando **Jest**.
 
 ## Tecnologias
 
  - [ Nodejs ]( https://nodejs.org/en/ )
  - [ Expressjs ]( https://expressjs.com/pt-br/ )
- - [ Jest ] ( https://jestjs.io/ )
+ - [ Jest ]( https://jestjs.io/ )
  - [ docker ]( https://hub.docker.com/ )
  - [ PostgreSQL ]( https://www.postgresql.org/ )
  - [ MongoDB]( https://www.mongodb.com/cloud/atlas )
  - [ Redis ]( https://redis.io/ )
 
- ## FrontEnd
 
  #### WEB
 <img alt="Gobarber" src="./readmeImages/autenticação.PNG"/>
@@ -38,5 +37,9 @@ O gobarber é um aplicação de agendamentos destinada para barbearias, o client
   </p>
 
   ## Documentações
+  ### Como usar
+  - [API GoBarber]()
+  - [Front-End]()
+  - [Mobile]()
 
   
