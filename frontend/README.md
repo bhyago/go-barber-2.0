@@ -19,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Inicialização do servidor**
 
-  Para inicializar o servidor, no terminal execute o comando ``/frontend``:
+  Para inicializar o servidor, no terminal execute o comando em ``./frontend``:
   ```
   yarn start
   ```
