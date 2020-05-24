@@ -29,6 +29,7 @@ O gobarber é um aplicação de agendamentos destinada para barbearias, onde o c
  - [React](https://reactjs.org/)
 
 
+## Interface
  #### WEB
 <img alt="Gobarber" src="./readmeImages/autenticação.PNG"/>
 
