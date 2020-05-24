@@ -30,10 +30,10 @@ O gobarber é um aplicação de agendamentos destinada para barbearias, onde o c
 
 
 ## Interface
- #### WEB
+ #### 🖥WEB
 <img alt="Gobarber" src="./readmeImages/autenticação.PNG"/>
 
- #### MOBILE
+ ####  📱MOBILE
   <p align="center">
     <img alt="Gobarber" src="./readmeImages/mobile.PNG"/>
   </p>
