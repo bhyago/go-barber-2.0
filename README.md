@@ -7,35 +7,45 @@
 </p>
 
 <p align="center">
-  <a href="#rocket-sobre-o-desafio">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#calendar-entrega">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#calendar-entrega">Interface</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#calendar-entrega">Documentações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#sobre-o-gobarber">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#interface">Interface</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#documentações">Documentações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 ## Sobre o Gobarber
-O gobarber é um aplicação de agendamentos destinada para barbearias, o cliente pode marcar um serviço com um barbeiro especipico e o barbeiro faz o gerenciameto de seus agendamentos. O goBarber está sendo desenvolvido com typeScript, NodeJS, React e React Native.
+O gobarber é um aplicação de agendamentos destinada para barbearias, onde o cliente pode marcar um serviço com um barbeiro específico e o barbeiro faz o gerenciameto de seus agendamentos. O goBarber está sendo desenvolvido com ***typeScript***, ***NodeJS***, ***React*** e ***React Native***. Com este projeto aprendi muito sobre como organizar a arquiterua utilizando os principios de **DDD (Domain Driven Design)** e **TDD(Test Driven Development)** utilizando **Jest**.
 
 ## Tecnologias
-
+ - [TypeScript](https://www.typescriptlang.org/)
  - [ Nodejs ]( https://nodejs.org/en/ )
  - [ Expressjs ]( https://expressjs.com/pt-br/ )
+ - [ Jest ]( https://jestjs.io/ )
  - [ docker ]( https://hub.docker.com/ )
  - [ PostgreSQL ]( https://www.postgresql.org/ )
- - [ mongoDB]( https://www.mongodb.com/cloud/atlas )
- - [ redis ]( https://redis.io/ )
+ - [ MongoDB]( https://www.mongodb.com/cloud/atlas )
+ - [ Redis ]( https://redis.io/ )
+ - [React](https://reactjs.org/)
 
- ## FrontEnd
 
- #### WEB
+## Interface
+ #### 🖥WEB
 <img alt="Gobarber" src="./readmeImages/autenticação.PNG"/>
 
- #### MOBILE
+ ####  📱MOBILE
   <p align="center">
     <img alt="Gobarber" src="./readmeImages/mobile.PNG"/>
   </p>
 
   ## Documentações
+  ### Como usar
+   Para fazer o download do projeto abra o **```terminal```** e execute o comando abaixo: 
+  ```
+  git clone https://github.com/bhyago/go-barber-2.0.git
+  ```
+  - <a href="./backend/README.md">API GoBarber</a>
+  - <a href="./frontend/README.md">front-end</a>
+  - <a href="./appgobarber/README.md">Mobile</a>
 
   

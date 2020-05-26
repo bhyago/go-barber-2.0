@@ -1,71 +1,41 @@
-# Recuperação de senha
+# API GoBarber
+## Pré-requisito
+:rotating_light:Esse projeto faz uso de algumas tecnologias obrigatorias para o fucionamento da aplicação, antes de seguir em frente certifique-se que o **Docker** e **Nodejs** na versão **12.14.1** ou superios, estejam instalados no seu computador.
+
+- Instale o postgresSQL, mongodb com as mesmas configurações do arquivo ``./backend/ormconfig`` e redis com as configurações da variavel de ambiente no seu ambiente usando **Docker** ou **instalador**
 
 
-**RF**
+**Instalando as Dependências** 
 
-- O usúario deve poder recuperar sua senha informando o seu e-mail;
-- O usuário deve receber um e-mail com instruções de recuperação de senha;
-- o usuário deve poder resetar sua senha;
+  Para instalar as dependências necessarias e gerar a pasta **```node_modules```** execute o comando:
+  ```
+  yarn
+  ```
+  OU
+  ```
+  npm install
+  ```
+  :rotating_light:**obs**:recomendamos que seja utilizado o **``yarn``**
+  
+**Incializando as variaveis de ambiente**
 
-**RNF**
+  Dentro do diretorio **``` ./backend/.env.example```**, altere os dados de acordo com a configuração das suas variaveis de ambiente e depois renomeie o arquivo para **```.env```**.
+  :rotating_light:**obs**:não é necessário preencher as variáveis da aws
+  
+**Inicialização do servidor**
 
-- Utilizar Mailtrap para testar envios em ambiente de dev;
-- Utilizar Amazon SES para enviar em produção;
-- O envio de e-mails deve acontecer em segundo plano (background job);
+  Para inicializar o servidor, no terminal execute o comando ``/backend``:
+  ```
+  yarn dev:server
+  ```
+  Se desejar iniciar o servidor juntamente com **```degub```** do **```vscode```**, execute o seguinte comando:
+  ```
+  yarn dev:degub
+  ```
+  
+#### :memo: Licença
 
-**RN**
+  Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-- O link enviado por e-mail para resetar senha, deve expirar em 2h;
-- O usuário precisa confirmar a nova senha ao resentar sua senha;
-
-# Atualização do perfil
-
-**RF**
-
-- O usuário deve poder atualizar seu nome, email e senha;
-
-**RN**
-
-- O usuário não pode alterar seu email para um email já utilizado;
-- Para atualizar sua senha, o usuário deve informar a senha antiga;
-- Para atualizar sua senha, o usuário precisa confirmar a nova senhaa;
-
-# Painel do prestador
-
-**RF**
-
-- O usuário deve poder listar seus agendamentos de um dia específico;
-- O prestador deve receber uma notificalção sempre que houver um novo agendamento;
-- O prestador deve poder visualizar as notificações não lidas;
-
-**RNF**
-
-- Os agendamentos do prestador no dia devem ser armazenados em cache;
-- As notificações do prestador devem ser armazenadas no MongoDB;
-- As notificações do prestador devem ser enviadas em tempo-real utilizando Socket.io;
-
-**RN**
-
-- A notificação deve ter um status de lida ou não-lida para que o prestador possa controilar;
-
-# Agendamento de serviços
-
-**RF**
-
-- O usuário deve poder listar todos prestadores de serviço cadastrados;
-- O usuário deve poder listar os dias de um mês com pelo menos um horário disponivel de um prestador;
-- O usuário deve poder listar horários disponíveis em um dia específico de um prestador;
-- O usuário deve poder realizar um novo agendamento com um prestador;
-
-**RNF**
-
-- A listagem de prestadores deve ser armazenada em cache;
-- 
-
-**RN**
-
-- Cade agendamento deve durar 1h exatamente;
-- Os agendamentos devem estar disponíveis entre 8h Às 18h (Primeiro às 8h, ùltimo às 17h)
-- O usuário não pode agendar em um horário já ocupado;
-- O usuário não pode agendar em um hoŕario que já passou;
-- O usuário não pode agendar serviços consigo mesmo;
+  
+ ##### **Feito com :heart: by Hyago Braga**
